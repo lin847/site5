@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Display Types: Inline vs Block vs Inline-Block</title>
+  <style>
+    .box {
+      background-color: lightcoral;
+      padding: 10px;
+      margin: 5px;
+      color: white;
+    }
+
+    .inline {
+vertical-align: middle;
+      display: inline;
+      background-color: lightblue;
+    }
+
+    .block {
+      display: block;
+      background-color: lightgreen;
+    }
+
+    .inline-block {
+      display: inline-block;
+      background-color: gold;
+      width: 150px;
+      height: 50px;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    .label {
+      font-weight: bold;
+      margin-top: 20px;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <span class="label">Inline Elements:</span>
+<span style="vertical-align: middle;">
+  <img src="icon.png" style="height: 20px; vertical-align: middle;" />
+  <span>Some text</span>
+</span>
+  <span class="box inline">Inline 1</span>
+  <span class="box inline">Inline 2</span>
+  <span class="box inline">Inline 3</span>
+
+  <span class="label">Block Elements:</span>
+  <div class="box block">Block 1</div>
+  <div class="box block">Block 2</div>
+  <div class="box block">Block 3</div>
+
+  <span class="label">Inline-Block Elements:</span>
+  <div class="box inline-block">Inline-Block 1</div>
+  <div class="box inline-block">Inline-Block 2</div>
+  <div class="box inline-block">Inline-Block 3</div>
+
+</body>
+</html>
