@@ -182,6 +182,13 @@ a:focus {
   display: flex;
   justify-content: center;
 }
+.navbarul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
 
 .navbar li {
   position: relative;
